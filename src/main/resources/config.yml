@@ -1,0 +1,45 @@
+#Klucz API dla platformy youtube.com
+#Mozesz go wygenerowac pod tym linkiem: https://console.developers.google.com/apis/
+api_key: "AIzaSyAL7aPbsVRM8aURMCzG0EBxw0WxX-vK168"
+#Nazwa filmu
+needed_title: "PVPBLAZE.NET - Najlepszy Serwer PVP"
+#Opis filmu
+needed_desc: "IP: PVPBLAZE.NET"
+#Wymagane wyswietlenia pod filmem
+needed_views: 300
+#Wymagany minimalny czas filmu w sekundach.
+min_duration: 20
+#Wymagany maksymalny czas filmu w sekundach.
+max_duration: 35
+#Wymagane subskrypcje
+min_sub: 1000
+#Komendy ktore maja byc wykonane jezeli ktos wstawi reklame.
+succ_cmds:
+ - "komenda"
+ - "lp user {nick} parent set yt"
+# Jak czesto sprawdzac czy wszystkie filmy nie zostaly usuniete. Rzadziej == wieksza wydajnosc. W sekundach.
+check_delay: 300
+#Komendy ktore maja byc wykonane jezeli ktos usunie reklame.
+err_cmds:
+ - "bc &7{nick} &7usunal film z serwera lub ustawil status na prywatny! Ranga &4Y&fT&7 zostaje mu odebrana!"
+ - "ban {nick} USUNIECIE REKLAMY"
+#Ustawianie wiadomosci
+correct_command: "[&ePVP&6BLAZE-CORE] &7Poprawne uzycie: &c/ytlink <link>&7, Wymagania Reklamy Pod /yt"
+invalid_url: "[&ePVP&6BLAZE-CORE] &7Zly link lub film jest prywatny!"
+invalid_title: "[&ePVP&6BLAZE-CORE] &7Tytul filmu musi zawierac slowo &cP-CORE.PL - Twoj Serwer MegaDrop&7!"
+invalid_desc: "[&ePVP&6BLAZE-CORE] &7Opis filmu musi zawierac slowo &cIP: P-CORE.PL&7!"
+invalid_views: "[&ePVP&6BLAZE-CORE] &7Aby dodac film musisz posadac min &c10 &300wyswietlen pod nim!"
+invalid_state: "[&ePVP&6BLAZE-CORE] &7Film musi byc publiczny!"
+invalid_duration: "[&ePVP&6BLAZE-CORE] &7Twoj film jest za krotki!"
+invalid_sub: "[&ePVP&6BLAZE-CORE] &7Musisz posiadac min &c1000 &7subskrypcji!"
+invalid_privsub: "[&ePVP&6BLAZE-CORE] &7Posiadasz prywatne subskrybcje!"
+succ_added: "[&ePVP&6BLAZE-CORE] &7Twoj film zostal dodany!"
+player_already_registered: "[&ePVP&6BLAZE-CORE] &7Posiadasz juz range &4Y&fT&7!"
+video_already_registered: "[&ePVP&6BLAZE-CORE] &7Ten film jest juz zarejestrowany!"
+#Dane do bazy danych MySql.
+mysql:
+  host: "mysql.titanaxe.com"
+  port: 3306
+  user: "srv6351"
+  pass: "PQj4TngG"
+  database: "srv6351"

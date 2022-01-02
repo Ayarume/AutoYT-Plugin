@@ -1,0 +1,10 @@
+name: AY-AUTOYT
+version: 1.1
+main: pl.ayarume.youtubebot.Main
+author: "Ayarume"
+description: "Plugin na Automatyczna Range YOUTUBER [Pomagal: Torwik#1337]"
+commands:
+  ytber:
+    aliases: [ytlink]
+  yt:
+    aliases: [wymaganiayt]
